@@ -1,0 +1,146 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 155, 223);
+}
+
+/* Container */
+.container {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #e0e6e9;
+  box-shadow: #363332 -0px 1px 10px 3px;
+}
+
+/* Main Childs */
+.container header {
+  font-size: 22px;
+  font-weight: 1000;
+
+  text-align: center;
+  color: #232121;
+  
+}
+.container header:hover
+{
+  box-shadow: #363332 -0px 1px 10px 3px;
+  border-radius: 8px; 
+  opacity: 1.5;
+}
+
+.container form {
+  margin-top: 25px;
+  text-align: center;
+  
+}
+
+/* Form */
+form .field {
+  margin-bottom: 20px;
+}
+form .input-field {
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  border: 1px solid #8a9a9a;
+  background-color: rgb(195, 213, 222);
+}
+
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+}
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #e61608;
+  font-size: 13px;
+  display: none;
+}
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+/* icon in create password field */
+.create-password .error {
+  align-items: flex-start;
+}
+.create-password .error-icon {
+  margin-top: 4px;
+}
+
+/* Submit Button */
+.button {
+  margin: 20px 0 6px;
+}
+.button input {
+  color: #cedce6;
+ 
+  font-size: 16px;
+  font-weight: 500;
+  background-color:#3c80b4 ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 45%;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  
+}
+.button input:hover {
+  background-color:rgb(131, 147, 158);
+  color: #3a3e41;
+  font-size: 16px;
+  
+
+}
+
+/* Invalid */
+.invalid input {
+  border-color:rgb(31, 145, 210);
+}
+.invalid .error {
+  display: flex;
+}
+
+/* Media Queries */
+/* For Screens lesser than 375px */
+@media (max-width: 375px) {
+  .container {
+    max-width: 310px;
+  }
+}
